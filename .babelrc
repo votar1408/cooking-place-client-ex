@@ -1,0 +1,17 @@
+{
+    "plugins": [
+        "@babel/proposal-class-properties"
+    ],
+    "presets": [
+        [
+            "@babel/env", // full name "@babel/preset-env"
+            {
+                "corejs": 3,
+                "useBuiltIns": "usage", // add only usage polyfills
+                "debug": true,
+                "modules": false // not transformation imports name(write import? not require)
+            }
+        ],
+        "@babel/react"
+    ]
+}

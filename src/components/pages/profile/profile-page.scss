@@ -1,0 +1,88 @@
+@import "../../app/common-scss//variable.scss";
+
+.profile-page{
+    width:100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+.profile-page__column{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('/images/body-back4.png') 0 0 repeat;
+}
+.profile-page__user-info{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.profile-page__buttons{
+    flex: 0 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+}
+.user-info__image{
+    width: 100px;
+    & img {
+        min-width: 100%;
+    }
+}
+.user-info__description{
+    margin: 0;
+}
+.user-info__text{
+    margin-bottom: 0.3rem;
+}
+.accordion-list{
+    width: 100%;
+}
+.accordion-item__header{
+    width: 100%;
+    background: rgba($color-water2, 0.8);
+    color:white;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: "Calibri Light";
+    padding: 1rem;
+    display: flex;
+    border-bottom: 1px solid white;
+}
+.accordion-item__title{
+    margin-right: 1rem;
+}
+.accordion-item__toggler{
+    transform: rotate(0deg);
+    transition: 0.3s;
+    width:20px;
+    color:white;
+    & img{
+        max-width: 100%;
+    }
+}
+.accordion-item__toggler-closed{
+    transform: rotate(180deg);
+    transition: 0.3s;
+    width:20px;
+    color:white;
+    & img{
+        max-width: 100%;
+    }
+}
+.accordion-item__value{
+    & li {
+        list-style: inside;
+    }
+    width: 100%;
+    text-align: left;
+    font-size: 1.3rem;
+    padding: 1rem 1rem 1rem 2rem;
+    background: $color-grey;
+    border-bottom: 1px solid $color-grey2;
+}

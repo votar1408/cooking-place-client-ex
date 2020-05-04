@@ -1,0 +1,134 @@
+@import "./common-scss//custom.scss";
+@import "./common-scss/nullstyle.scss";
+@import "./common-scss/variable.scss";
+
+body {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  background: url('/images/body-back1.png') 0 0 repeat;
+}
+.wrapper {
+  font-size: 18px;
+  height: 100%;
+}
+.content {
+  padding-top: 6.7rem;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  background: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), -10px 0 20px -10px rgba(0, 0, 0, 0.4), 10px 0 20px -10px rgba(0, 0, 0, 0.4),
+    0 0 0 rgba(0, 0, 0, 0.1) inset;
+  border-radius: 0.5rem;
+}
+.half-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), -10px 0 20px -10px rgba(0, 0, 0, 0.4), 10px 0 20px -10px rgba(0, 0, 0, 0.4),
+    0 0 0 rgba(0, 0, 0, 0.1) inset;
+  border-radius: 0.3rem;
+}
+.header-title-h2 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.header-subtitle-h2{
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.b-r{
+  border-radius: 0.5rem;
+}
+.common-ico {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  & img {
+    width: 30px;
+    max-width: 100%;
+  }
+}
+.block-underline{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+.warning-message{
+  font-size: 1.5rem;
+}
+.title-text{
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: "Calibri Light";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.title-text-modal{
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: "Calibri Light";
+  line-height: 2rem;
+}
+.window-modal{
+  background: rgba(0, 0, 0, 0.5);
+}
+.border-around{
+  background: $color-grey;
+  border: 1px solid $color-grey2;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+@media screen and (min-width: 960px) {
+  html {
+    overflow-y: scroll;
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
+  }
+}
+@media (max-width: 1200px) {
+  body {
+    background: url('/images/body-back1-mobile.png') 0 0 repeat;
+  }
+  .main-container {
+    max-width: 970px;
+  }
+  .wrapper {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .main-container {
+    max-width: 750px;
+  }
+  .wrapper {
+    font-size: 14px;
+  }
+  .content {
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .main-container {
+    max-width: none;
+  }
+  .wrapper {
+    font-size: 14px;
+  }
+  .header-title-h2 {
+    font-size: 1.1rem;
+  }
+  .content {
+    padding-top: 5.3rem;
+  }
+}

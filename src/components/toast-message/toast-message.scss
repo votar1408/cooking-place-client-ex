@@ -1,0 +1,31 @@
+@import "../app/common-scss//variable.scss";
+
+.toast-modal {
+    position: fixed;
+    left: 0;
+    right: 0px;
+    top:0px;
+    z-index:2000;
+}
+.toast-container {
+    position: relative;
+}
+.toast-column{
+    position: absolute;
+    top: 8rem;
+    right: 2rem;
+}
+.toast-header-warning {
+    color: black;
+    background: #ffc107!important;
+}
+.toast-header-error {
+    color: white;
+    background: #dc3545!important;
+}
+@media (max-width: 767px) {
+    .toast-column{
+        top: 5.5rem;
+        right: 1rem;
+    }
+  }

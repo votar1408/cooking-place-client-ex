@@ -1,0 +1,28 @@
+@import "../app/common-scss//variable.scss";
+
+.tag-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0);
+}
+.tag-list__item {
+  background: $color-water2;
+  text-align: center;
+  padding: 0.3rem 0.5rem;
+  font-size:1.1rem;
+  font-weight: 500;
+  color: white;
+  border-radius: 0.3rem;
+}
+@media (min-width: 1200px) {
+  .tag-list__item{
+    &:hover {
+      background: lighten($color-water2, 10%);
+    }
+    &:active {
+      background: darken($color-water2, 10%);
+      top: 1px;
+    }
+  }
+}
